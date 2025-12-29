@@ -1,0 +1,11 @@
+node_modules
+build
+dist
+.coverage
+htmlcov
+**/__pycache__
+*.log
+*.pyc
+.env
+.env.*
+.next
