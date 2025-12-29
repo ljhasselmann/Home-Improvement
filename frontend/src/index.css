@@ -1,0 +1,149 @@
+:root {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #0f172a;
+  background-color: #f8fafc;
+  line-height: 1.6;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top left, #eef2ff 0%, #f8fafc 40%);
+  color: #0f172a;
+}
+
+main.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 16px 80px;
+}
+
+header {
+  text-align: left;
+  margin-bottom: 28px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.75rem;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+.lede {
+  color: #475569;
+  max-width: 720px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  margin: 0 0 4px;
+  color: #6366f1;
+  font-weight: 700;
+}
+
+.panel {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.04);
+}
+
+.panel__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.muted {
+  color: #475569;
+  margin: 0;
+}
+
+.uploader {
+  border: 2px dashed #cbd5e1;
+  border-radius: 12px;
+  padding: 22px;
+  display: grid;
+  gap: 10px;
+  background: #f8fafc;
+}
+
+.uploader__cta {
+  background: #eef2ff;
+  color: #312e81;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.card {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 14px;
+  background: #f8fafc;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  background: #e2e8f0;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.pill--ghost {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+}
+
+.pill--high {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.pill--medium {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.pill--low {
+  background: #ecfeff;
+  color: #0e7490;
+}
