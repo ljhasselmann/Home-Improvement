@@ -1,22 +1,8 @@
 # Infrastructure
 
-Docker Compose for local development of the Home Improvement Planner.
+This directory will capture infrastructure-as-code, deployment manifests, and local development tooling. It should rely on the shared linting and formatting settings at the repository root.
 
-## Services
-- `db`: PostgreSQL 16 with persistent volume.
-- `cache`: Redis 7.
-- `minio`: S3-compatible storage with console exposed on port 9001.
-- `backend`: FastAPI app served by Uvicorn in reload mode.
-- `frontend`: Vite dev server for the React app.
-
-## Usage
-Start the full stack:
-```bash
-make compose-up
-```
-Stop and remove containers/volumes:
-```bash
-make compose-down
-```
-
-Environment defaults are drawn from `backend/.env.example` and inline values in the Compose file.
+Planned substructure (as infrastructure is added):
+- `deploy/` for environment manifests (e.g., Kubernetes, Terraform modules).
+- `local/` for Docker Compose and local tooling.
+- `ci/` for CI/CD workflow definitions.

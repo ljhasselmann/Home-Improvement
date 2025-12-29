@@ -1,23 +1,9 @@
 # Frontend
 
-React + Vite + TypeScript application.
+This directory will house the React + TypeScript application (e.g., Vite-based) with feature-oriented folders. Use the shared repository linting and formatting configurations at the root to keep consistent code style across the stack.
 
-## Requirements
-- Node.js 20+
-- npm 10+
-
-## Setup
-```bash
-npm install
-npm run dev
-```
-
-## Scripts
-- `npm run dev` – start dev server on http://localhost:5173
-- `npm run build` – production build
-- `npm run preview` – preview build
-- `npm run lint` – run ESLint with repository config
-- `npm run format` – check formatting with Prettier
-
-## Environment
-Copy `.env.example` to `.env` and set `VITE_API_BASE_URL` for the backend API.
+Planned substructure (as the app is scaffolded):
+- `src/` for application code.
+- `public/` for static assets.
+- `tests/` for unit/component tests.
+- `e2e/` for end-to-end tests when introduced.

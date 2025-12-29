@@ -41,38 +41,6 @@ Homeowners can plan projects, budget confidently, and track progress end-to-end 
 - `docs/` – Product, architecture, and onboarding docs.
 - `infrastructure/` – Docker Compose, CI/CD workflows, and IaC stubs.
 
-## Prerequisites
-- Python 3.11+
-- Node.js 20+ and npm 10+
-- Docker (optional, for Compose workflows)
-
-## Quickstart
-1. Install backend dependencies and copy environment variables:
-   ```bash
-   make install-backend
-   cp backend/.env.example backend/.env
-   ```
-2. Install frontend dependencies and copy environment variables:
-   ```bash
-   make install-frontend
-   cp frontend/.env.example frontend/.env
-   ```
-3. Run services locally:
-   - Backend: `make dev-backend`
-   - Frontend: `make dev-frontend`
-   - Full stack with dependencies: `make compose-up`
-4. Lint, type-check, and test:
-   ```bash
-   make lint-backend
-   make type-backend
-   make test-backend
-   make lint-frontend
-   ```
-
-Troubleshooting tips:
-- Ensure Docker has enough memory (at least 4GB) when running Compose.
-- If npm install fails due to registry access, set `NPM_CONFIG_REGISTRY` to your allowed registry.
-
 ### Shared linting and formatting
 The repo includes top-level configuration to keep a consistent style across frontend and backend:
 - `.editorconfig` standardizes newlines, indentation, and whitespace trimming across editors.

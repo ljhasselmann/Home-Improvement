@@ -8,16 +8,6 @@ This plan translates the proposed stack into hands-on steps for the first develo
 - **Infrastructure**: Docker Compose with PostgreSQL, Redis, MinIO (S3-compatible), and app services; `.env.example` for configuration.
 - **CI**: GitHub Actions workflow running lint, type checks, and tests for backend and frontend; build frontend artifact.
 
-### Phase 0 checklist
-- **Metadata**: Add `LICENSE`, `CODEOWNERS`, and issue/PR templates; document required Node/PNPM and Python versions.
-- **Pre-commit**: Configure `.pre-commit-config.yaml` to run formatters, linters, and security checks locally before commit.
-- **Backend bootstrap**: Create `backend/pyproject.toml` with FastAPI, SQLModel/SQLAlchemy, Uvicorn, Pydantic settings, and testing dependencies; add `backend/.env.example`.
-- **Frontend bootstrap**: Initialize Vite + React + TypeScript in `frontend/` with ESLint/Prettier wired to repo-wide config; add `frontend/.env.example` for API base URL.
-- **Docker Compose**: Draft `infrastructure/docker-compose.yml` to launch Postgres, Redis, MinIO, and placeholder frontend/backend services; include seed volumes and healthchecks.
-- **Make/NPM scripts**: Add `Makefile` targets or npm scripts for `lint`, `format`, `type-check`, `test`, `dev`, and `compose-up/down` to simplify local workflows.
-- **CI bootstrap**: Commit a starter GitHub Actions workflow (`.github/workflows/ci.yml`) that installs deps, runs lint/type/test for backend and frontend, and builds the frontend.
-- **Docs**: Expand `README.md` quickstart with "install deps", "run compose", and "lint/type/test" commands; include troubleshooting for common local setup issues.
-
 ## Phase 1 — Backend Scaffold for Inspection Ingestion (Week 1–2)
 - **FastAPI app**: `backend/app/main.py` with versioned router prefix `/api/v1` and OpenAPI docs enabled.
 - **Dependencies**: SQLModel or SQLAlchemy + Alembic migrations; Pydantic settings for config; authentication dependencies.

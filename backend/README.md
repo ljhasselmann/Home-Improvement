@@ -1,31 +1,9 @@
 # Backend
 
-FastAPI service for the Home Improvement Planner.
+This directory will hold the FastAPI service with modular routers, services, schemas, and background jobs. It should share linting and formatting conventions defined at the repository root.
 
-## Setup
-1. Create and activate a virtual environment using Python 3.11+.
-2. Install dependencies:
-   ```bash
-   pip install -e .[dev]
-   ```
-3. Copy `.env.example` to `.env` and adjust values as needed.
-
-## Development
-- Run the app locally:
-  ```bash
-  uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-  ```
-- Run tests:
-  ```bash
-  pytest
-  ```
-- Lint and format:
-  ```bash
-  ruff check app
-  black app
-  mypy app
-  ```
-
-## Notes
-- API docs: http://localhost:8000/api/v1/docs
-- Health check: http://localhost:8000/api/v1/health
+Planned substructure (as the service is scaffolded):
+- `app/` for FastAPI application code (routers, models, services, dependencies).
+- `alembic/` for database migrations if using Alembic/SQLModel.
+- `tests/` for API and service tests.
+- `scripts/` for local tooling (e.g., data seeding, maintenance tasks).
